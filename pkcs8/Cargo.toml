@@ -17,9 +17,9 @@ edition = "2024"
 rust-version = "1.85"
 
 [dependencies]
-der = {  version = "0.8", features = ["heapless", "oid"] }
-spki = { version = "0.8.0-rc.4" }
-x509-cert = { version = "0.3.0-rc.4", default-features = false }
+der = {  path = "../der", version = "0.8", features = ["heapless", "oid"] }
+spki = { path = "../spki" }
+x509-cert = { path = "../x509-cert", default-features = false }
 
 # optional dependencies
 rand_core = { version = "0.10", optional = true, default-features = false }
